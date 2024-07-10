@@ -16,7 +16,7 @@ from urllib.request import (
     Request,
 )
 from wsgiref.simple_server import make_server, WSGIRequestHandler, WSGIServer
-
+from prometheus_client.coverage import branch_coverage_1, branch_coverage_2
 from .openmetrics import exposition as openmetrics
 from .registry import CollectorRegistry, REGISTRY
 from .utils import floatToGoString
@@ -100,11 +100,13 @@ def _bake_output(registry, accept_header, accept_encoding_header, params, disabl
     # Choose the correct plain text format of the output.
     encoder, content_type = choose_encoder(accept_header)
     if 'name[]' in params:
+        branch_coverage_1["_bake_output_1"] = True
         registry = registry.restricted_registry(params['name[]'])
     output = encoder(registry)
     headers = [('Content-Type', content_type)]
     # If gzip encoding required, gzip the output.
     if not disable_compression and gzip_accepted(accept_encoding_header):
+        branch_coverage_1["_bake_output_2"] = True
         output = gzip.compress(output)
         headers.append(('Content-Encoding', 'gzip'))
     return '200 OK', headers, output
@@ -360,8 +362,10 @@ def write_to_textfile(path: str, registry: CollectorRegistry) -> None:
 
     # rename(2) is atomic but fails on Windows if the destination file exists
     if os.name == 'nt':
+        branch_coverage_2["write_to_textfile_1"] = True
         os.replace(tmppath, path)
     else:
+        branch_coverage_2["write_to_textfile_2"] = True
         os.rename(tmppath, path)
 
 
