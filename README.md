@@ -6,7 +6,11 @@ Name: Client_python
 
 URL: https://github.com/prometheus/client_python
 
-Number of lines of code and the tool used to count it: Lines: 7428 Tool used: lizard
+Number of lines of code and the tool used to count it: 
+
+Lines: 7428 
+
+Tool used: lizard
 
 Programming language: Python
 
