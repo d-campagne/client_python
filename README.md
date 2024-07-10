@@ -34,7 +34,7 @@ New coverage:
 
 ![Screenshot 2024-07-10 021559](https://github.com/d-campagne/client_python/assets/121505924/2d9552d8-9737-4817-89d5-7dc5df201c2d)
 
-The old coverage was 50%, because only 1 branch was hit of the 2 branches. I improved this coverage to 100% especially by adding tests for the first if statement, 
+The old coverage was 1/3, because only 1 branch was hit of the 3 branches. I improved this coverage to 100% especially by adding tests for the first if statement, 
 but also not forgetting to create tests for the second if statement. 
 
 Function 2: write_to_textfile()
