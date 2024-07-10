@@ -1,6 +1,8 @@
 Report for Assignment 1 resit
 
+
 Project chosen
+
 
 Name: Client_python
 
@@ -14,6 +16,7 @@ Tool used: lizard
 
 Programming language: Python
 
+
 Coverage measurement with existing tool
 
 To meassure the original coverage of the code I used coverage which I ran with the command: 
@@ -21,6 +24,7 @@ To meassure the original coverage of the code I used coverage which I ran with t
 coverage run -m pytest, while I was already in the tests directory
 
 ![Screenshot 2024-07-10 041002](https://github.com/d-campagne/client_python/assets/121505924/6c7d4ab3-bbde-4d58-afd3-44ae041fe011)
+
 
 Coverage improvement 
 
@@ -59,6 +63,7 @@ New coverage:
 ![Screenshot 2024-07-10 022457](https://github.com/d-campagne/client_python/assets/121505924/4cb5f675-3a0b-4021-b908-500aacb0052b)
 
 The old coverage was 0%, because none of the branches were hit. I improved the coverage to 100% by adding tests that hit every branch
+
 
 Overall 
 
