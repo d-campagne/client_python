@@ -5,5 +5,5 @@ branch_coverage_1 = {
 
 branch_coverage_2 = {
     "write_to_textfile_1": False,
-    "write_to_textfile_1":False
+    "write_to_textfile_2":False
 }
