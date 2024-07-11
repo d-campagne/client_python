@@ -42,7 +42,7 @@ Improved coverage:
 
 ![Screenshot 2024-07-10 022422](https://github.com/d-campagne/client_python/assets/121505924/5aa30a14-fb6b-45fb-a72a-d7244f4e90fb)
 
-The old coverage was 3/4, because only 3 branches were hit of the 4 branches, if we also take into consideration that there are hidden else branches for each if branch. I improved this coverage to 100% especially by adding tests for the first if statement, but also not forgetting to create tests for the second if statement, in order for every branch to be hit
+The old coverage was 3/4, because only 3 branches were hit of the 4 branches, if we also take into consideration that there are hidden else branches for each if branch. I improved this coverage to 100% especially by adding tests for the first if statement, but also not forgetting to create tests for the second if statement and hidden else statements, in order for every branch to be hit
 
 Function 2: write_to_textfile()
 
